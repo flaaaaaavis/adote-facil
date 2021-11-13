@@ -1,4 +1,6 @@
 https://medium.com/trainingcenter/bem-em-5min-f5c80fd23439
 
+MODAL http://lucasmaiaesilva.com.br/posts/criando-modal-simples-com-html-e-css/
+
 Coloque aqui a sua classe (ou seu id) e diga a que ele se refere
 
