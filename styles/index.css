@@ -1,0 +1,83 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-bottom: 5vh;
+}
+
+#img-pagina-inicial {
+    width: 59.89vw;
+}
+
+article section {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#barra-pesquisa{
+    width: 29.16vw;
+
+    border: 1px solid #A9D9C3;
+}
+
+#divulgar {
+    width: 27.81vw;
+    height: 12vh;
+
+    color: #025E73;
+    border: 1px solid #CF4265;
+    border-radius: 15px;
+}
+
+footer {
+    width: 95vw;
+    height: 50vh;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2 {
+    margin-bottom: 3vh;
+
+    color: #CF4265;
+}
+
+footer section {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+footer section div {
+    width: 15vw;
+}
+
+footer section img {
+    width: 100%;
+}
+
+footer button {
+    width: 14vw;
+
+    align-self: center;
+
+    margin-top: 15vh;
+    bottom: 20vh;
+
+    border: 1px solid #CF4265;
+}
