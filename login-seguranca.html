@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/login-seguranca.css">
+
+        <!-- <link rel="shortcut icon" href="assets/logomarca.png" type="image/x-icon"> -->
+
+        <title>Adote Fácil</title>
+    </head>
+
+    <body>
+
+        <aside class="navegacao">
+
+            <section class="inf-pessoal">
+                <img class="foto-perfil" src="./assets/account_circle_black_24dp (2).svg">
+                
+                <p class="nome"><b>Flávia Souza</b></p>
+                <p class="cargo">ADOTANTE</p>
+            </section>
+
+            <nav class="menu">
+                <ul>
+                    <li class="lista">
+                        <b></b>
+                        <b></b>
+                        <a href="./perfil.html">
+                        <span class="opcao">Dados Pessois</span>
+                        </a>
+                    </li>
+
+                    <li class="lista"> 
+                        <b></b>
+                        <b></b>                                     
+                        <a href="#">
+                        <span class="opcao">Meus Pets</span>
+                        </a>
+                    </li>
+
+                    <li class="lista">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="opcao">FAQ</span>
+                            </a>
+                    </li>
+
+                    <li class="lista active">
+                        <b></b>
+                        <b></b>
+                        <a href="./login-seguranca.html">
+                        <span class="opcao">Login e Segurança</span>
+                        </a>
+                    </li>
+
+                    <li class="lista">
+                        <b></b>
+                        <b></b>
+                        <!-- <a href="#">
+                        <span class="icone"><span class="material-icons">account_circle</span></span> -->
+                        <span class="opcao">Sair</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="conteudo">
+            <h3>Redefinir senha</h3>
+            <p class="mensagem">Insira sua nova senha abaixo</p>
+            <div id="espaco">
+                <form id="alterar-senha" action="">
+                    <label for="senha">Senha</label><br>
+                    <input type="text" id="senha" placeholder="Digite a senha"><br>
+                    <label for="confirmar-senha">Confirmar</label><br>
+                    <input type="password" id="comfirmar-senha" placeholder="Repita a senha">
+                </form>
+                <div class="botoes">
+                    <button class="btn-voltar" >Voltar</button>
+                    <button class="btn-alterar" form="alterar-senha" type="submit">Alterar</button>            
+                </div>
+            </div>        
+        </div>
+
+
+        <script>
+            let lista = document.querySelectorAll('.lista')
+            for (let i = 0; i<lista.length; i++){
+                lista[i].onclick = function(){
+                    let j= 0;
+                    while(j < lista.length){
+                        lista[j++].className = 'lista';
+                    }
+                    lista[i].className = 'lista active'
+                }
+            }
+        </script>
+    </body>
+
+</html>
