@@ -1,0 +1,54 @@
+.vitrine{
+   display: flex;
+   margin-left: 20%;
+   width: 100%;
+   padding: 5%;
+   flex-flow: row;
+   flex-wrap: wrap;
+}
+
+.card{
+   width: 25%;
+   padding: 2.5%;
+   padding-bottom: 7.5%;
+}
+
+.menu-rotator{
+   position:relative;
+   display:flex;
+   margin-top:-20%;
+   justify-content: space-between;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+ 
+.bullet{
+   border-radius:50%;
+   border:1px solid #f2f2f2;
+   background-color: transparent;
+   height: 0.4rem;
+   width: 0.4rem;
+   margin-left: 0.2em;
+   margin-right: 0.2em;
+}
+ 
+.ativo{
+   background-color: #f2f2f2;
+}
+ 
+.fim-do-card{
+   display:flex;
+   margin-top: 5%;
+   justify-content:center;
+   background-color: #f2f2f2;
+}
+ 
+.titulo-do-card{
+   text-align: center;
+   flex: 4;
+}
+ 
+.coracao{
+   flex:1;
+   margin-top: 5%
+}

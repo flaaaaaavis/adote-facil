@@ -1,0 +1,17 @@
+https://medium.com/trainingcenter/bem-em-5min-f5c80fd23439
+
+MODAL http://lucasmaiaesilva.com.br/posts/criando-modal-simples-com-html-e-css/
+
+Coloque aqui a sua classe (ou seu id) e diga a que ele se refere
+
+menu-rotator: setas e bullets das imagens no feed
+
+bullet: uma unidade que representa uma imagem
+
+ativo: a bullet ativa
+
+fim-do-card: titulo e favoritar do card no feed
+
+titulo-do-card: nome + localização dos animais em cards
+
+coracao: ajustes de posição do coração de favorito
