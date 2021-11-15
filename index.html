@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <!-- <link rel="shortcut icon" href="assets/logomarca.png" type="image/x-icon"> -->
+
+        <title>Adote Fácil</title>
+    </head>
+    
+    <body>
+        <header>
+            <img src="assets/logomarca.png">
+            <nav>
+                <button id="btn-quero-adotar" onclick="window.location.href='feed.html'">QUERO ADOTAR</button>
+                <button class="btn-entre">ENTRE</button>
+                <button class="btn-cadastre-se">CADASTRE-SE</button>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <img id="img-pagina-inicial" src="assets/pagina-inicial.png">
+                <section id="right">
+                    <form id="barra-pesquisa">
+                        <input type="text" id="busca" placeholder="Busque seu melhor amigo">
+                        <img src="./assets/search.png">
+                    </form>
+                    
+                    <button id="divulgar">Clique aqui para<br />divulgar um animal</button>
+                </section>
+            </article>
+            
+            <footer>
+                <section id="container">
+                    <h2>Novos aumigos na área</h2>
+                    <section id="cards">
+                        <div class="card">
+                            <img src="assets/pic-dog-3.png">
+                            <h3>Nome</h3>
+                            <h4>Cidade / Estado</h4>
+                            <img class="btn-like" src="assets/btn-coracao.png" alt="Botão de like em formato de coração" onclick="this.src='assets/btn-coracaofilled.png'" />
+                        </div>
+                        <div class="card">
+                            <img src="assets/image 6.png">
+                            <h3>Nome</h3>
+                            <h4>Cidade / Estado</h4>
+                        </div>
+                        <div class="card">
+                            <img src="assets/pic-cat-3.png">
+                            <h3>Nome</h3>
+                            <h4>Cidade / Estado</h4>
+                        </div>
+                        <div class="card">
+                            <img src="assets/image 4.png">
+                            <h3>Nome</h3>
+                            <h4>Cidade / Estado</h4>
+                        </div>
+                        <div class="card">
+                            <img src="assets/pic-cat-1.png">
+                            <h3>Nome</h3>
+                            <h4>Cidade / Estado</h4>
+                        </div>   
+                    </section>
+                    <button id="btn-ver-mais" onclick="window.location.href='feed.html'">VER MAIS</button>
+                </section>
+                
+            </footer>
+        </main>
+        
+    </body>
+</html>
