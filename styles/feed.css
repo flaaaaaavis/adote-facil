@@ -175,6 +175,7 @@ a, a:hover, a:focus, a:active{
     padding: 10px;
     width: 41px;
     height: 41px;
+    cursor: pointer;
 }
 
 .svg__heart{
