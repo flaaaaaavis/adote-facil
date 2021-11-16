@@ -1,5 +1,6 @@
 main {
     margin-left: 300px;
+    margin-top: 10vh;
 }
 
 h3 {
@@ -27,4 +28,29 @@ ol li {
 
 ol li {
     margin-top: 40px;
+}
+
+footer input {
+    position: absolute;
+    width: 200px;
+    height: 39px;
+    right: 20px;
+    bottom: 20px;
+    margin-top: 20px;
+
+    padding: 10px;
+
+    background: transparent;
+    border: 4px solid #CF4265;
+    border-radius: 28px;
+
+    color: #CF4265;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

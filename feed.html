@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/feed.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <title>Adote Fácil</title>
+</head>
+
+<body>
+    <header class="header__container">
+        <a href="./index.html">
+            <img src="assets/img-logo.png" alt="logo adote facil" class="header__logo">
+        </a>
+        <nav class="header__navbar">
+            <ul class="header__navbar__list">
+                <li class="header__navbar__list__item margin-right"><a href="./feed.html">Home</a></li>
+                <li class="header__navbar__list__item margin-right"><a href="#">Sobre nós</a></li>
+                <li class="header__navbar__list__item margin-right"><a href="./cadastro.html">Cadastro de animal</a></li>
+                <li class="header__navbar__list__item margin-right"><a href="./perfil.html">Meu perfil</a></li>
+                <li class="header__navbar__list__item"><a href="#">Minhas conversas (0)</a></li>
+            </ul>
+        </nav>
+        <ul class="header__navbar__list">
+            <li class="header__navbar__list__item margin-right"><a href="#">Flávia Souza</a></li>
+            <li class="header__navbar__list__item">
+                <a href="#">
+                    <img src="assets/img-avatar.png" alt="imagem avatar anônimo"
+                        class="header__navbar__list__item__img">
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <h1 class="titulo">Encontre seu novo amigo </h1>
+
+    <div class="app__container">
+
+        <div class="filtro__container">
+            <form action="" class="filtro__form">
+                <label for="fespecie" class="filtro__form__label">Espécie</label><br />
+                <select class="filtro__form__select" id="fespecie" name="especie">
+                    <option value="" selected hidden>Todas as espécies</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Pássaro">Pássaro</option>
+                </select><br />
+
+                <label for="fsexo" class="filtro__form__label">Sexo</label><br />
+                <select class="filtro__form__select" id="fsexo" name="sexo">
+                    <option value="" selected hidden>Todas os sexos</option>
+                    <option value="Macho">Macho</option>
+                    <option value="Fêmea">Fêmea</option>
+                </select><br />
+
+                <label for="fporte" class="filtro__form__label">Porte</label><br />
+                <select class="filtro__form__select" id="fporte" name="porte">
+                    <option value="" selected hidden>Todas os portes</option>
+
+                    <option value="Pequeno">Pequeno</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Grande">Grande</option>
+                </select><br />
+
+                <label for="festado" class="filtro__form__label">Estado</label><br />
+                <select class="filtro__form__select" id="festado" name="estado">
+                    <option value="" selected hidden>Todas os estados</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Espírito Santo">Espírito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Pará">Pará</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                </select><br />
+
+                <label for="fcidade" class="filtro__form__label">Cidade</label><br />
+                <input type="text" class="filtro__form__select" id="fcidade" name="cidade"
+                    placeholder="Insira sua cidade">
+
+                <input class="filtro__form__submit" type="submit" value="BUSCAR">
+            </form>
+        </div>
+
+        <div class="cards__container">
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-dog-1.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-dog-2.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-dog-3.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-cat-1.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-cat-2.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-cat-3.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

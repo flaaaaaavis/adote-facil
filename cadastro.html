@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <title>Cadastro de animal</title>
+</head>
+
+<body>
+    <header class="header__container">
+        <a href="./index.html">
+            <img src="assets/img-logo.png" alt="logo adote facil" class="header__logo">
+        </a>
+        <nav class="header__navbar">
+            <ul class="header__navbar__list">
+                <li class="header__navbar__list__item margin-right"><a href="./feed.html">Home</a></li>
+                <li class="header__navbar__list__item margin-right"><a href="#">Sobre nós</a></li>
+                <li class="header__navbar__list__item margin-right"><a href="./cadastro.html">Cadastro de animal</a></li>
+                <li class="header__navbar__list__item margin-right"><a href="./perfil.html">Meu perfil</a></li>
+                <li class="header__navbar__list__item"><a href="#">Minhas conversas (0)</a></li>
+            </ul>
+        </nav>
+        <ul class="header__navbar__list">
+            <li class="header__navbar__list__item margin-right"><a href="#">Flávia Souza</a></li>
+            <li class="header__navbar__list__item">
+                <a href="#">
+                    <img src="assets/img-avatar.png" alt="imagem avatar anônimo"
+                        class="header__navbar__list__item__img">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <h1 class="title">Cadastro de animal<h1>
+
+            <div class="app__container">
+                <section class="section__container section__margin">
+                    <h2 class="section__header">Fotos</h2>
+                    <div class="fotos__area">
+                        <img src="assets/icon-camera.svg" alt="" class="fotos__icon">
+                        <h3 class="section__header">Adicionar fotos</h3>
+                        <h4 class="fotos__subtitle">JPG e PNG apenas</h4>
+                    </div>
+
+                </section>
+
+                <section class="section__container">
+                    <h2 class="section__header">Informações necessárias</h2>
+                    <form action="" class="informacoes__form" form="formcadastro">
+                        <input type="text" class="informacoes__form__input--1 input" id="fnome" name="nome"
+                            placeholder="Nome do animal">
+                        <input type="number" class="informacoes__form__input--2 input" id="fidade" name="idade"
+                            placeholder="Idade"><br />
+                        <select class="informacoes__form__input--1 input" id="fespecie" name="especie">
+                            <option value="" selected hidden>Espécie</option>
+                            <option value="Cachorro">Cachorro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Pássaro">Pássaro</option>
+                        </select>
+                        <input type="text" class="informacoes__form__input--2 input" id="fgenero" name="genero"
+                            placeholder="Gênero"><br />
+                        <input type="text" class="informacoes__form__input--3 input" id="fcidade" name="cidade"
+                            placeholder="Cidade">
+                        <input type="text" class="informacoes__form__input--4 input" id="festado" name="estado"
+                            placeholder="Estado">
+                        <input type="number" class="informacoes__form__input--2 input" id="fcep" name="cep"
+                            placeholder="CEP">
+                        <textarea class="informacoes__form__input--5 input" id="fdescricao" cols="30" rows="10"
+                            name="descricao" placeholder="Descrição"></textarea>
+                    </form>
+
+                </section>
+
+
+            </div>
+
+            <div class="app__btn">
+                <a href="#" class="btn__cancelar">CANCELAR</a>
+                <button type="submit" class="informacoes__form__submit" form="formcadastro">CADASTRAR</button>
+            </div>
+
+</body>
+
+</html>
