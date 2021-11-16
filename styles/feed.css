@@ -25,6 +25,11 @@ select, input[type="text"]{
     box-sizing:border-box;
 }
 
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
 .header__container{
     height: 15%;
     width: 100%;

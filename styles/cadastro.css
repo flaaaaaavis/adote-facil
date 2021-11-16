@@ -27,6 +27,10 @@ select, input[type="text"], input[type="number"], textarea{
     box-sizing:border-box;
 }
 
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+}
 .title{
     color: var(--azul);
     font-family: Roboto, sans-serif;
