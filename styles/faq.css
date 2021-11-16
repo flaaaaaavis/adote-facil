@@ -1,35 +1,30 @@
-ol {
-    margin-left: 500px;
+main {
+    margin-left: 300px;
 }
 
-ol li {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
+h3 {
     font-size: 36px;
-    line-height: 42px;
+    font-weight: 600;
 
     color: #025E73;
 }
 
-ol li p {
+ol li {
+    color: #025E73;
+}
+
+.texto {
+    width: 65vw;
+    height: 150px;
     margin-top: 23px;
 
-    background-color: #C4C4C44F;
+    padding: 10px;
+    text-align: justify;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
+    background: #C4C4C44F;
 
-    color: #8A8888;
 }
 
-ol li:first-child {
-    margin-top: 94px;
-}
-
-ol li:last-child {
-    margin-top: 38px;
+ol li {
+    margin-top: 40px;
 }

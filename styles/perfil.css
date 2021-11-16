@@ -5,9 +5,17 @@ main {
     top: 10px;
     left: 261px;
     margin: 30px;
+    width: 70vw;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+
     height: 100vh;
+}
+
+#foto img {
+    width: 180px;
 }
 
 label {
@@ -40,4 +48,15 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+select {
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 20px;
+
+    height: 39px;
+    width: 250px;
+
+    border-radius: 19.5px;
+    background: #C4C4C469;
 }

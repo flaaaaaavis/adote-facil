@@ -17,13 +17,15 @@ Cinza #F2F2F2
     outline: none;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
-    color: #363537;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a, button {
+    cursor: pointer;
 }
 
 body {
@@ -35,72 +37,32 @@ body {
     z-index: -1;
 }
 
-header {
-    position: fixed;
-    top: 0;
-
-    height: 12vh;
-    width: 100vw;
-
-    background-color: #E5EEEA;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    z-index: 1;
+main {
+    margin-top: 20px;
 }
 
-header img {
-    height: 100%;
 
-    margin-left: 2vw;
-}
+footer input {
+    position: absolute;
+    width: 200px;
+    height: 39px;
+    right: 20px;
+    bottom: 20px;
+    margin-top: 20px;
 
-nav {
-    width: 50vw;
-    height: 100%;
+    padding: 10px;
 
-    margin-right: 5vw;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#btn-quero-adotar {
-    width: 14vw;
-    height: 40%;
+    background: transparent;
+    border: 4px solid #CF4265;
+    border-radius: 28px;
 
     color: #CF4265;
-    background-color: transparent;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
 
-    border: 1px solid #CF4265;
-    border-radius: 50px;
-}
-
-.btn-entre {
-    width: 14vw;
-    height: 40%;
-
-    color: #025E73;
-    background-color: transparent;
-
-    border: none;
-}
-
-.btn-cadastre-se {
-    width: 14vw;
-    height: 40%;
-
-    border-radius: 50px;
-
-    color: #F2F2F2;
-    background-color: #025E73;
-}
-
-main {
-    margin-top: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

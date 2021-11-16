@@ -11,133 +11,18 @@
     margin-top: 35px;
 }
 
-.inf-pessoal{
+.inf-pessoal {
     text-align: center;
     color: white;
     font-size: 14px;
     margin: 0px;
 }
 
-.mensagem{
-    margin: 30px 0px ;
-    font-size: 14px;
-}
+h3 {
+    font-size: 36px;
+    font-weight: 600;
 
-.navegacao{
-    font-size: 14px;
-    position: fixed;
-    top:1px;
-    left: 1px;
-    bottom: 1px;
-    width: 235px;
-    box-sizing: initial;
-    border-left: 5px solid #025E73;
-    background: #025E73;
-    transition: width 0.5s;
-}
-.navegacao ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 5px;
-    padding-top: 250px; 
-}
-
-.navegacao ul li{
-    position: relative;
-    list-style: none;
-    margin-left: 5px;
-    padding-left: 10px;
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-.navegacao ul li.active {
-    background: #F2F2F2;
-}
-
-.navegacao ul li a {
-    position: relative;
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    width: 90%;
-    display: flex;
-    text-decoration: none;
-    color: #F2F2F2;
-}
-.navegacao ul li b:nth-child(1) {
-    position: absolute;
-    top: -20px;
-    left: 49px;
-    height: 25px;
-    width: 95.6%;
-    background: #F2F2F2;
-    display: none;
-}
-
-.navegacao ul li b:nth-child(1)::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 80%;
-    height: 80%;
-    border-bottom-right-radius: 20px;
-    background: #025E73;
-}
-
-.navegacao ul li b:nth-child(2) {
-    position: absolute;
-    bottom: -20px;
-    left: 49px;
-    height: 25px;
-    width: 95.6%;
-    background: #F2F2F2;
-    display: none;
-}
-
-.navegacao ul li b:nth-child(2)::before {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 80%;
-    height: 80%;
-    border-top-right-radius: 20px;
-    background:  #025E73;
-}
-
-.navegacao ul li.active b:nth-child(1),
-.navegacao ul li.active b:nth-child(2) {
-    display: block;
-}
-
-.navegacao ul li.active a{
-    color: #133C55;
-}
-
-.material-icons{
-    font-size: 30px;
-}
-
-.navegacao ul li a .material-icons {
-    position: relative;
-    display: block;
-    line-height: 50px;
-    text-align: le;
-}
-
-
-.navegacao ul li .title {
-    position: relative;
-    display: block;
-    padding-left: 20px;
-    height: 50px;
-    line-height: 50px;
-    white-space: normal;
+    color: #025E73;
 }
 
 .conteudo {

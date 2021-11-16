@@ -1,8 +1,41 @@
-.inf-pessoal{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.navegacao {
+    position: fixed;
+    top:1px;
+    left: 1px;
+    bottom: 1px;
+    transition: width 0.5s;
+    width: 235px;
+    box-sizing: border-box;
+
+    border-left: 5px solid #025E73;
+    background: #025E73;
+    color: #F2F2F2;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.inf-pessoal {
     text-align: center;
     color: white;
     font-size: 14px;
-    margin: 0px;
+}
+
+.inf-pessoal p:first-child {
+    width: 199px;
+    height: 23px;
+    left: 85px;
+    top: 216px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    
+    color: #FFFFFF;
 }
 
 .foto-perfil {
@@ -11,38 +44,27 @@
     left: 116px;
     top: 48px;
 
-    max-width: 100px; 
-    max-height: 100px;
+    max-width: 120px; 
+    max-height: 120px;
     border-radius: 50%;
     margin-top: 35px;
+    margin-bottom: 10px;
 }
 
-.navegacao {
-    font-size: 14px;
-    position: fixed;
-    top:1px;
-    left: 1px;
-    bottom: 1px;
-    width: 235px;
-    box-sizing: initial;
-    border-left: 5px solid #025E73;
-    background: #025E73;
-    transition: width 0.5s;
-}
-.navegacao ul{
+
+.navegacao ul {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding-left: 5px;
-    padding-top: 250px; 
+    padding-top: 250px;
 }
 
 .navegacao ul li{
     position: relative;
     list-style: none;
     margin-left: 5px;
-    padding-left: 10px;
     width: 100%;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -50,6 +72,8 @@
 
 .navegacao ul li.active{
     background: #F2F2F2;
+
+    color: #363537;
 }
 
 .navegacao ul li a {
@@ -59,10 +83,11 @@
     line-height: 50px;
     width: 100%;
     display: flex;
+    justify-content: center;
     text-decoration: none;
-    color: #F2F2F2;
 }
-.navegacao ul li b:nth-child(1){
+
+.navegacao ul li b:nth-child(1) {
     position: absolute;
     top: -20px;
     left: 49px;
@@ -72,12 +97,12 @@
     display: none;
 }
 
-.navegacao ul li b:nth-child(1)::before{
+.navegacao ul li b:nth-child(1)::before {
     content: '';
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 80%;
+    width: 79.5%;
     height: 80%;
     border-bottom-right-radius: 20px;
     background: #025E73;
@@ -98,7 +123,7 @@
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width: 80%;
+    width: 79.5%;
     height: 80%;
     border-top-right-radius: 20px;
     background:  #025E73;
@@ -120,4 +145,19 @@
     height: 50px;
     line-height: 50px;
     white-space: normal;
+}
+
+.gambiarra {
+    margin-bottom: 1.5px;
+}
+
+.opcao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.opcao img {
+    width: 20px;
+    margin-left: 5px;
 }
