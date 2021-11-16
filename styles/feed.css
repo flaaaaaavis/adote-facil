@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --azul: #025E73;
+    --cinza__bg: #F9F9F9;
+    --cinza__font: #B1B1B1;
+    --branco: #f2f2f2;
+    --preto: #000000;
+    --preto__font: #363537;
+    --verde: #E5EEEA;
+}
+
+body {
+    background-color: var(--cinza__bg);
+}
+
+select, input[type="text"]{
+    width:100%;
+    box-sizing:border-box;
+}
+
+.header__container{
+    height: 15%;
+    width: 100%;
+    background-color: #E5EEEA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow(0 0 2px var(--preto));
+    min-width: 1350px;
+
+}
+
+.header__navbar__list{
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;    
+    font-size: 18px;
+}
+
+.margin-right{
+    margin-right: 35px;
+}
+
+.titulo{
+    color: var(--azul);
+    font-family: Roboto, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 5%;
+    margin-bottom: 1%;
+
+}
+
+.app__container{
+    min-width: 1350px;
+    
+}
+.filtro__container{
+    border-radius: 12px;
+    height: 70%;
+    width: 12%;
+    min-height: 690px;
+    min-width: 233px;
+    padding: 25px 18px 38px;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+}
+
+.filtro__form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.filtro__form__label{
+    color: var(--preto);
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.filtro__form__select{
+    border-radius: 12px;
+    border-color: var(--preto);
+    border-width: 2px;
+    background-color: #FEFCFC;
+    color: var(--cinza__font);
+    width: 100%;
+    height: 5%;
+    padding: 3px 0px 5px 9px;
+}
+
+.filtro__form__submit{
+    background-color: var(--azul);
+    border-radius: 10px;
+    border-width: 0;
+    color: var(--branco);
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15% auto 0;
+    width: 65%;
+    padding: 4% 0;
+}
+
+.cards__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    width: 70%;
+    height: 100%;
+}
+
+.cards__card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 30%;
+    height: 100%;
+    min-width: 400px;
+    margin-bottom: 5%;
+    position: relative;
+
+}
+
+.cards___img__container{
+    width: 100%;
+    height: 100%;
+}
+
+.cards__card__img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.svg__fotos{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 50%;
+}
+
+.svg__arrow{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 75%;
+    left: 85%;
+    background-color: #ffffff80;
+    border-radius: 50%;
+    padding: 10px;
+    width: 41px;
+    height: 41px;
+}
+
+.svg__heart{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 95%;
+    right: 5%;
+}
+
+.cards__card__title{
+    color: var(--azul);
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.cards__card__subtitle{
+    color: var(--preto__font);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/feed.css">
+    <title>Feed</title>
+</head>
+
+<body>
+    <header class="header__container">
+        <img src="assets/img-logo.png" alt="logo adote facil" class="header__logo">
+        <nav class="header__navbar">
+            <ul class="header__navbar__list">
+                <li class="header__navbar__list__item margin-right">Home</li>
+                <li class="header__navbar__list__item margin-right">Sobre nós</li>
+                <li class="header__navbar__list__item margin-right">Cadastro de animal</li>
+                <li class="header__navbar__list__item margin-right">Meu perfil</li>
+                <li class="header__navbar__list__item">Minhas conversas (0)</li>
+            </ul>
+        </nav>
+        <ul class="header__navbar__list">
+            <li class="header__navbar__list__item margin-right">Flávia Souza</li>
+            <li class="header__navbar__list__item">
+                <img src="assets/img-avatar.png" alt="imagem avatar anônimo" class="header__navbar__list__item__img">
+            </li>
+        </ul>
+    </header>
+
+    <h1 class="titulo">Encontre seu novo amigo </h1>
+
+    <div class="app__container">
+
+        <div class="filtro__container">
+            <form action="" class="filtro__form">
+                <label for="fespecie" class="filtro__form__label">Espécie</label><br />
+                <select class="filtro__form__select" id="fespecie" name="especie">
+                    <option value="" selected hidden>Todas as espécies</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Pássaro">Pássaro</option>
+                </select><br />
+
+                <label for="fsexo" class="filtro__form__label">Sexo</label><br />
+                <select class="filtro__form__select" id="fsexo" name="sexo">
+                    <option value="" selected hidden>Todas os sexos</option>
+                    <option value="Macho">Macho</option>
+                    <option value="Fêmea">Fêmea</option>
+                </select><br />
+
+                <label for="fporte" class="filtro__form__label">Porte</label><br />
+                <select class="filtro__form__select" id="fporte" name="porte">
+                    <option value="" selected hidden>Todas os portes</option>
+
+                    <option value="Pequeno">Pequeno</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Grande">Grande</option>
+                </select><br />
+
+                <label for="festado" class="filtro__form__label">Estado</label><br />
+                <select class="filtro__form__select" id="festado" name="estado">
+                    <option value="" selected hidden>Todas os estados</option>
+                    <option value="Pequeno">Pequeno</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Grande">Grande</option>
+                </select><br />
+
+                <label for="fcidade" class="filtro__form__label">Cidade</label><br />
+                <input type="text" class="filtro__form__select" id="fcidade" name="cidade"
+                    placeholder="Insira sua cidade">
+
+                <input class="filtro__form__submit" type="submit" value="BUSCAR">
+            </form>
+        </div>
+
+        <div class="cards__container">
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-dog-1.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-dog-2.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-dog-3.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-cat-1.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-cat-2.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__img__container">
+                    <img src="assets/pic-cat-3.png" alt="imagem animal" class="cards__card__img">
+                    <img src="assets/svg-fotos.svg" alt="indicador quantidade de fotos" class="svg__fotos">
+                    <img src="assets/svg-arrow.svg" alt="próxima foto" class="svg__arrow">
+                    <img src="assets/svg-btn-coracao.png" alt="simbolo like"
+                        onclick="this.src='assets/svg-btn-coracao-filled.png'" class="svg__heart">
+
+                </div>
+                <h2 class="cards__card__title">Nome</h2>
+                <h3 class="cards__card__subtitle">Cidade / Estado</h3>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
