@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+:root {
+    --azul: #025E73;
+    --rosa: #CF4265;
+    --verde: #A9D9C3;
+    --verde-nav: #E5EEEA;
+    --vermelho: #E94D4D;
+    --preto: #363537;
+    --cinza: #F2F2F2;
+    --cinza__font: #B1B1B1;
+    --cinza__form__bg: #E4E4E4;
+    --cinza__form__font: #8A8888;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: bold;
+    display: inline-flex;
+    padding: .2vh;
+    width: 9vw;
+    justify-content: center;
+    border-radius: .6vh;
+    border: 0 none;
+    margin-top: 5vh;
+}
+
+a .btn-cancel {
+    background-color: var(--verde);
+    color: #000;
+}
+
+a .btn-confirm {
+    background-color: var(--vermelho);
+    color: var(--cinza)
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8vw;
+    place-content: center;
+}
+
+.modal-sair {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.warning {
+    color: #000;
+    margin: 5vh 0 3vh 0;
+}
+
+.modal-sair:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza);
+    width: 33vw;
+    height: 60vh;
+    border-radius: 3vh;
+}

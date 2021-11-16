@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+:root {
+    --azul: #025E73;
+    --rosa: #CF4265;
+    --verde: #A9D9C3;
+    --verde-nav: #E5EEEA;
+    --vermelho: #E94D4D;
+    --preto: #363537;
+    --cinza: #F2F2F2;
+    --cinza__font: #B1B1B1;
+    --cinza__form__bg: #E4E4E4;
+    --cinza__form__font: #8A8888;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-flex;
+    padding: 1rem;
+    background-color: var(--verde);
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.modal-login {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.modal-login h2 {
+    color: var(--azul);
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 3vh;
+}
+
+.modal-login:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza);
+    width: 40vw;
+    height: 50vh;
+    border-radius: 3vh;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2vh;
+    margin: 2vh 0 2vh 0;
+}
+
+.input{
+    border-width: 0;
+    width: 35vw;
+    border-radius: .6vw;
+    background-color: rgba(196, 196, 196, 0.31);
+    color: var(--cinza__form__font);
+    font-family: Roboto, sans-serif;
+    font-size: 1.7vh;
+    font-weight: 600;
+    padding: 3vh 0 3vh 3vh;
+}
+
+.continue {
+    font-size: 1.3vh;
+    padding-bottom: .5vh;
+    position: absolute;
+    transform: translate(-16.4vw);
+}
+
+.chkbox {
+    width: 100% ;
+    display: flex;
+}
+
+.forgot-pass {
+    font-size: 1.3vh;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: .5vw;
+    transform: translate(13.4vw);
+}
+
+.login {
+    cursor: pointer;
+    margin-top: 1vh;
+    text-transform: uppercase;
+    background-color: var(--azul);
+    border-radius: 10px;
+    border-width: 0;
+    color: var(--cinza);
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 25vw;
+    padding: 3vh 0 3vh 0;
+}
+
+.create-account {
+    font-size: 1.3vh;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: .5vw;
+}

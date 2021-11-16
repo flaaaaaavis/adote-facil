@@ -18,11 +18,32 @@
             <img src="assets/logomarca.png">
             <nav>
                 <button id="btn-quero-adotar" onclick="window.location.href='feed.html'">QUERO ADOTAR</button>
-                <button class="btn-entre">ENTRE</button>
+                <a href="#modal">
+                    <button class="btn-entre">ENTRE</button>
+                </a>
                 <button class="btn-cadastre-se">CADASTRE-SE</button>
             </nav>
         </header>
-
+        <div id="modal" class="modal-login">
+            <div class="modal-content">
+                <h2 class="modal-title">Acesse sua conta</h2>
+                <form class="input-container">
+                    <input type="email" name="email" id="email" class="input" placeholder="E-mail ou CPF">
+                    <input type="password" name="password" id="password" class="input" placeholder="Senha">
+                </form>
+                <div class="chkbx">
+                    <label for="continue" class="continue">
+                        <input type="checkbox" name="continue" id="continue">
+                        Continuar conectado
+                    </label>
+                </div>
+                <a href="#" class="forgot-pass">Esqueci minha senha</a>
+                <a href="#">
+                    <button href="#" class="login">entrar</button>
+                </a>
+                <a href="#" class="create-account">Não tem conta? Crie uma agora!</a>
+            </div>
+        </div>
         <main>
             <article>
                 <img id="img-pagina-inicial" src="assets/pagina-inicial.png">
@@ -50,21 +71,25 @@
                             <img src="assets/image 6.png">
                             <h3>Nome</h3>
                             <h4>Cidade / Estado</h4>
+                            <img class="btn-like" src="assets/btn-coracao.png" alt="Botão de like em formato de coração" onclick="this.src='assets/btn-coracaofilled.png'" />
                         </div>
                         <div class="card">
                             <img src="assets/pic-cat-3.png">
                             <h3>Nome</h3>
                             <h4>Cidade / Estado</h4>
+                            <img class="btn-like" src="assets/btn-coracao.png" alt="Botão de like em formato de coração" onclick="this.src='assets/btn-coracaofilled.png'" />
                         </div>
                         <div class="card">
                             <img src="assets/image 4.png">
                             <h3>Nome</h3>
                             <h4>Cidade / Estado</h4>
+                            <img class="btn-like" src="assets/btn-coracao.png" alt="Botão de like em formato de coração" onclick="this.src='assets/btn-coracaofilled.png'" />
                         </div>
                         <div class="card">
                             <img src="assets/pic-cat-1.png">
                             <h3>Nome</h3>
                             <h4>Cidade / Estado</h4>
+                            <img class="btn-like" src="assets/btn-coracao.png" alt="Botão de like em formato de coração" onclick="this.src='assets/btn-coracaofilled.png'" />
                         </div>   
                     </section>
                     <button id="btn-ver-mais" onclick="window.location.href='feed.html'">VER MAIS</button>
