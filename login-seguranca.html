@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/menu.css">
         <link rel="stylesheet" href="./styles/login-seguranca.css">
 
         <!-- <link rel="shortcut icon" href="assets/logomarca.png" type="image/x-icon"> -->
@@ -38,7 +39,7 @@
                     <li class="lista"> 
                         <b></b>
                         <b></b>                                     
-                        <a href="#">
+                        <a href="./meus-pets.html">
                         <span class="opcao">Meus Pets</span>
                         </a>
                     </li>
@@ -46,7 +47,7 @@
                     <li class="lista">
                         <b></b>
                         <b></b>
-                        <a href="#">
+                        <a href="./faq.html">
                             <span class="opcao">FAQ</span>
                             </a>
                     </li>
@@ -54,7 +55,7 @@
                     <li class="lista active">
                         <b></b>
                         <b></b>
-                        <a href="./login-seguranca.html">
+                        <a href="#">
                         <span class="opcao">Login e Segurança</span>
                         </a>
                     </li>
@@ -72,36 +73,19 @@
             </nav>
         </aside>
 
-        <div class="conteudo">
+        <main class="conteudo">
             <h3>Redefinir senha</h3>
-            <p class="mensagem">Insira sua nova senha abaixo</p>
             <div id="espaco">
                 <form id="alterar-senha" action="">
                     <label for="senha">Senha</label><br>
                     <input type="text" id="senha" placeholder="Digite a senha"><br>
+
                     <label for="confirmar-senha">Confirmar</label><br>
                     <input type="password" id="comfirmar-senha" placeholder="Repita a senha">
                 </form>
-                <div class="botoes">
-                    <button class="btn-voltar" >Voltar</button>
-                    <button class="btn-alterar" form="alterar-senha" type="submit">Alterar</button>            
-                </div>
             </div>        
-        </div>
+        </main>
 
-
-        <script>
-            let lista = document.querySelectorAll('.lista')
-            for (let i = 0; i<lista.length; i++){
-                lista[i].onclick = function(){
-                    let j= 0;
-                    while(j < lista.length){
-                        lista[j++].className = 'lista';
-                    }
-                    lista[i].className = 'lista active'
-                }
-            }
-        </script>
     </body>
 
 </html>

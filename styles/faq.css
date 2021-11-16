@@ -1,0 +1,35 @@
+ol {
+    margin-left: 500px;
+}
+
+ol li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #025E73;
+}
+
+ol li p {
+    margin-top: 23px;
+
+    background-color: #C4C4C44F;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #8A8888;
+}
+
+ol li:first-child {
+    margin-top: 94px;
+}
+
+ol li:last-child {
+    margin-top: 38px;
+}
