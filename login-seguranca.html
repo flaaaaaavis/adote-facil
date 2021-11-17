@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="stylesheet" href="./styles/menu.css">
         <link rel="stylesheet" href="./styles/login-seguranca.css">
+        <link rel="stylesheet" href="../Adote-F-cil/adote-facil-modais/modal-sair.css">
 
         <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
 
@@ -16,6 +17,21 @@
     </head>
 
     <body>
+
+        <div id="modal" class="modal-sair">
+
+            <div class="modal-container">
+
+                <img src="../Adote-F-cil/adote-facil-modais/Vector.png" alt="Imagem de aviso vermelha">
+                <h2 class="warning">Deseja mesmo sair?</h2>
+
+                <div class="linha">
+                    <a href=""><button class="btn btn-cancel">cancelar</button></a>
+                    <a href=""><button class="btn btn-confirm">sair</button></a>
+                </div>
+            </div>
+
+        </div>
 
         <aside class="navegacao">
 
@@ -63,7 +79,7 @@
                     <li class="lista">
                         <b></b>
                         <b></b>
-                        <a href="./sair-modal.html">
+                        <a href="#modal">
                         <span class="opcao">Sair<img src="./assets/sair.png"></span>
                         </a>
                     </li>
