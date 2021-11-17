@@ -54,7 +54,7 @@ a .btn-confirm {
     color: var(--cinza)
 }
 
-.row {
+.linha {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8vw;
@@ -72,6 +72,8 @@ a .btn-confirm {
     visibility: hidden;
     opacity: 0;
     transition: .3s;
+
+    z-index: 1000;
 }
 
 .warning {

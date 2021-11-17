@@ -18,8 +18,17 @@
 
 .inf-pessoal {
     text-align: center;
-    color: white;
     font-size: 14px;
+}
+
+.nome {
+    color: #F2F2F2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cargo {
+    color: #F2F2F2;
 }
 
 .inf-pessoal p:first-child {
@@ -72,7 +81,9 @@
 
 .navegacao ul li.active{
     background: #F2F2F2;
+}
 
+.active span {
     color: #363537;
 }
 
@@ -155,6 +166,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: #F2F2F2;
 }
 
 .opcao img {

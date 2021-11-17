@@ -151,7 +151,6 @@ footer section img {
     align-self: flex-start;
     margin-left: 1.5vw;
     margin-top: 0;
-    
 }
 
 #cards {
@@ -190,7 +189,6 @@ button {
     transform: translate(10.3vh, 10.8vh);
 }
 
-
 /* modal */
 
 a {
@@ -208,8 +206,12 @@ a {
 
 .modal-login {
     position: fixed;
-    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
     height: 100vh;
+
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -265,7 +267,7 @@ a {
 }
 
 .continue {
-    font-size: 1.3vh;
+    font-size: 2vh;
     padding-bottom: .5vh;
     position: absolute;
     transform: translate(-16.4vw);
@@ -282,7 +284,7 @@ input[type="checkbox"]:checked {
 }
 
 .forgot-pass {
-    font-size: 1.3vh;
+    font-size: 2vh;
     text-decoration: none;
     font-weight: 600;
     margin-left: .5vw;
@@ -294,20 +296,23 @@ input[type="checkbox"]:checked {
     margin-top: 1vh;
     text-transform: uppercase;
     background-color: var(--azul);
+
     border-radius: 10px;
     border-width: 0;
     color: var(--cinza);
     display: block;
-    font-family: Roboto, sans-serif;
+
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    width: 25vw;
-    padding: 3vh 0 3vh 0;
+    font-size: 16px;
+    width: 10vw;
+    padding: 2vh 0 2vh 0;
 }
 
 .create-account {
-    font-size: 1.3vh;
+    font-size: 1.8vh;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: .5vw;
+    margin-top: 10px;
 }
